@@ -55,7 +55,7 @@ const convertFunction = convert("24px", "em", { baseline: 12 });
 
 const StyledComponent = styled.h1`
   font-size: ${(fontSize) => rem(fontSize)};
-  padding: ${(fontSize) => em(12, baseline)};
+  padding: ${(fontSize) => em(12, fontSize)};
   margin: ${rem("8px 16px")};
 `;
 // .StyledComponent { font-size: 1.5rem; padding: 0.5em; margin: 0.5rem 1rem; }
