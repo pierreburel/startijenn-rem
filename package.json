@@ -9,7 +9,6 @@
     "responsive",
     "typography"
   ],
-  "type": "module",
   "main": "./index.cjs.js",
   "module": "./index.js",
   "scripts": {
