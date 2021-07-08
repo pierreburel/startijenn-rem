@@ -1,6 +1,6 @@
 {
   "name": "startijenn-rem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript function to convert CSS rem units.",
   "keywords": [
     "javascript",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/pierreburel/startijenn-rem",
   "devDependencies": {
-    "jest": "^26.6.3",
-    "rollup": "^2.45.1"
+    "jest": "^27.0.6",
+    "rollup": "^2.52.8"
   }
 }
