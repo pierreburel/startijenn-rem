@@ -1,9 +1,6 @@
-# Startijenn Rem [![Build Status][ci-img]][ci]
+# startijenn-rem [![Node.js CI](https://github.com/pierreburel/startijenn-rem/actions/workflows/node.js.yml/badge.svg)](https://github.com/pierreburel/startijenn-rem/actions/workflows/node.js.yml)
 
 JavaScript function to convert CSS rem units. Used by [postcss-rem](https://github.com/pierreburel/postcss-rem).
-
-[ci-img]: https://travis-ci.org/pierreburel/startijenn-rem.svg
-[ci]: https://travis-ci.org/pierreburel/startijenn-rem
 
 ## Usage
 
