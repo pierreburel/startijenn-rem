@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/pierreburel/startijenn-rem",
   "devDependencies": {
-    "jest": "^27.0.6",
-    "rollup": "^2.52.8"
+    "jest": "^27.4.7",
+    "rollup": "^2.63.0"
   }
 }
