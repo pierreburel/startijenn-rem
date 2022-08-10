@@ -1,6 +1,6 @@
 {
   "name": "startijenn-rem",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "JavaScript function to convert CSS rem units.",
   "keywords": [
     "javascript",
@@ -9,8 +9,9 @@
     "responsive",
     "typography"
   ],
-  "main": "./index.cjs.js",
-  "module": "./index.js",
+  "main": "index.cjs.js",
+  "module": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
     "build": "rollup -c",
