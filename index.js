@@ -1,6 +1,7 @@
 const defaults = {
   baseline: 16,
   precision: 5,
+  unit: true,
 };
 
 const rounded = (value, precision) => {
@@ -9,15 +10,15 @@ const rounded = (value, precision) => {
 };
 
 const convert = (value, to = 'rem', options = {}) => {
-  const { baseline, precision } = {...defaults, ...options};
+  const { baseline, precision, unit } = {...defaults, ...options};
 
   // Number
   if (typeof value === 'number') {
     if (to === 'px') {
-      return rounded(value * parseFloat(baseline), precision) + to;
+      return rounded(value * parseFloat(baseline), precision) + (unit ? to : 0);
     }
 
-    return rounded(value / parseFloat(baseline), precision) + to;
+    return rounded(value / parseFloat(baseline), precision) + (unit ? to : 0);
   }
 
   // Array

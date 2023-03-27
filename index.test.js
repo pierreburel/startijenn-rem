@@ -42,13 +42,21 @@ it('Variable', () => run(
 ));
 
 it('Array', () => run(
-  [24, '24px', '5px -10px 1.5rem', {a: 24}],
-  ['1.5rem', '1.5rem', '0.3125rem -0.625rem 1.5rem', {a: '1.5rem'}]
+  [24, '24px', '5px -10px 1.5rem'],
+  ['1.5rem', '1.5rem', '0.3125rem -0.625rem 1.5rem']
 ));
 
 it('Object', () => run(
-  {fontSize: 24, margin: '24px', padding: '5px -10px 1.5rem', a: { b: [24] }},
-  {fontSize: '1.5rem', margin: '1.5rem', padding: '0.3125rem -0.625rem 1.5rem', a: { b: ['1.5rem']}}
+  {fontSize: 24, margin: '24px', padding: '5px -10px 1.5rem'},
+  {fontSize: '1.5rem', margin: '1.5rem', padding: '0.3125rem -0.625rem 1.5rem'}
+));
+
+it('Complex object with unitless output', () => run(
+  {a: 16, b: [24, 32], c: { d: [48, { e: 64 }] }},
+  {a: 1, b: [1.5, 2], c: { d: [3, { e: 4 }] }},
+  {
+    unit: false
+  }
 ));
 
 it('Changing baseline', () => run(
@@ -75,10 +83,17 @@ it('Converting to pixels', () => run(
   px
 ));
 
-it('Converting to pixels (unitless)', () => run(
+it('Converting to pixels (unitless input)', () => run(
   -1.5,
   '-24px',
   {},
+  px
+));
+
+it('Converting to pixels (unitless input and output)', () => run(
+  -1.5,
+  -24,
+  { unit: false },
   px
 ));
 
